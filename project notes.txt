@@ -1,0 +1,28 @@
+After Data is transformed into binary (T/F) variables:
+
+1) specified x and y
+
+2) scale data and apply pca + dimmension reduction
+3) create the Kfold Framework
+4) split data after pca into k-folds
+--> In python this creates a generator object.
+5) for each k-fold, split test / train
+--- Logistic Regression
+
+5) create model for LogReg
+6) get prediction variables on test data (derived from PCA, which is derived from x)
+7) Calculate confusion matrix; specificity; prcision; FDR; FOR
+8) plot ROC curve (LogReg model, x_test, y_test)
+9) Print stats
+
+--- Naive Bayes
+10) create GaussianNB model
+11) prediction variables
+12) confusuion matrix; statistics
+13) plot ROC curve (NB model, x_test, y_test)
+14) 9) Print stats
+
+
+
+Notes:
+What are baseline probabilities? And how does that relate to kappa
